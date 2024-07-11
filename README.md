@@ -20,3 +20,15 @@
 
 > php artisan tinker
 > App\Models\Job::factory(300)->create()
+
+## Relation between tables
+
+# Job model, belongsTo
+
+> public function employer() { return $this->belongsTo(Employer::class); }
+> $job->employer, without employer()
+
+# Employer model, hasMany
+
+> public function jobs() {return $this->hasMany(Job::class); }
+> $employer->jobs, without jobs()
