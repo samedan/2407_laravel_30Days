@@ -32,3 +32,9 @@
 
 > public function jobs() {return $this->hasMany(Job::class); }
 > $employer->jobs, without jobs()
+
+### Create Tag model, factory, migration
+
+> php artisan make:model Tag -mf
+
+> php artisan migrate:rollback && php artisan migrate
