@@ -52,3 +52,7 @@
 
 > php artisan make:migration create_post_tag_table
 > php artisan migrate
+
+### Laravel Dev Bar
+
+> https://github.com/barryvdh/laravel-debugbar
