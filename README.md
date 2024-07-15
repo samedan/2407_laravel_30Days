@@ -47,3 +47,8 @@
 
 > Job.php -> tags() { return $this->belongsToMany(Tag::class, foreignPivotKey: "job_listing_id"); }
 > Tag.php -> jobs() { return $this->belongsToMany(Job::class, relatedPivotKey: "job_listing_id" ); }
+
+### Homework : post_tag table
+
+> php artisan make:migration create_post_tag_table
+> php artisan migrate
