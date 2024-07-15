@@ -1,3 +1,7 @@
+### Source Youtube
+
+> https://www.youtube.com/watch?v=SqTdHCTWqks&t=9617s
+
 ## Talwind free componenents
 
 > https://tailwindui.com/components/application-ui/application-shells/stacked
@@ -38,3 +42,8 @@
 > php artisan make:model Tag -mf
 
 > php artisan migrate:rollback && php artisan migrate
+
+## tags belongsToMany -> foreignPivotKey, relatedPivotKey
+
+> Job.php -> tags() { return $this->belongsToMany(Tag::class, foreignPivotKey: "job_listing_id"); }
+> Tag.php -> jobs() { return $this->belongsToMany(Job::class, relatedPivotKey: "job_listing_id" ); }
