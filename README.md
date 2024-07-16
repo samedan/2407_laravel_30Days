@@ -56,3 +56,7 @@
 ### Laravel Dev Bar
 
 > https://github.com/barryvdh/laravel-debugbar
+
+### Pagination
+
+> paginate, simplePaginate, cursorPaginate
