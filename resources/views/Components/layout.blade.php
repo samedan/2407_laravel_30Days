@@ -103,8 +103,10 @@
  </nav>
 
  <header class="bg-white shadow">
-   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 sm:flex sm:justify-between">
      <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{ $heading }}</h1>
+     {{-- <a href="/jobs/create" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Create Job</a> --}}
+    <x-button href="/jobs/create">Create Job</x-button>
    </div>
  </header>
  <main>
