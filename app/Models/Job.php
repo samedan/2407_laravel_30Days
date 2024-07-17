@@ -13,7 +13,8 @@ class Job extends Model {
     protected $table = 'job_listings'; // reads job_listings Table column
 
         
-    protected $fillable = ['title', 'salary'];
+    // protected $fillable = ['employer_id', 'title', 'salary'];
+    protected $guarded = [];
 
     public function employer() {
         return $this->belongsTo(Employer::class);
